@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2e8d5">
+<meta name="robots" content="noindex,nofollow">
+<title>本周专辑 · Love — Forever Changes</title>
+<style>
+  :root{
+    --paper:#f2e8d5;
+    --paper-2:#fbf6e9;
+    --ink:#1b1813;
+    --muted:#74695a;
+    --line:rgba(27,24,19,.16);
+    --line-strong:rgba(27,24,19,.32);
+    --accent:#c6532c;
+    --accent-dark:#9d3d1e;
+    --acid:#d9d46f;
+    --olive:#596044;
+    --shadow:0 18px 50px rgba(54,41,24,.12);
+    --serif:"Iowan Old Style","Palatino Linotype","Songti SC","Noto Serif CJK SC",serif;
+    --sans:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    color:var(--ink);
+    background:
+      radial-gradient(1200px 700px at 85% -10%, rgba(214,198,123,.34), transparent 60%),
+      radial-gradient(900px 600px at -10% 20%, rgba(198,83,44,.10), transparent 55%),
+      var(--paper);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    pointer-events:none;
+    opacity:.22;
+    background-image:radial-gradient(rgba(27,24,19,.14) .55px, transparent .7px);
+    background-size:4px 4px;
+    mix-blend-mode:multiply;
+  }
+  a{color:inherit}
+  button{font:inherit}
+  .wrap{width:min(760px,100%);margin:0 auto;padding:0 18px}
+  .eyebrow{
+    font-size:.68rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--muted);
+  }
+  .hero{padding-top:34px;padding-bottom:22px;text-align:center}
+  .hero-top{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:12px;margin-bottom:26px;text-align:left;
+  }
+  .hero-top .stamp{
+    border:1px solid var(--line-strong);
+    padding:7px 10px 6px;
+    font-family:var(--mono);
+    font-size:.62rem;
+    letter-spacing:.08em;
+    transform:rotate(-2deg);
+    background:rgba(251,246,233,.5);
+  }
+  .cover{
+    position:relative;
+    width:min(420px,82vw);
+    aspect-ratio:1/1;
+    margin:0 auto 28px;
+    overflow:hidden;
+    background:
+      linear-gradient(160deg, #e9dfb8 0%, #d6c57e 42%, #c9b463 100%);
+    border:1px solid rgba(27,24,19,.35);
+    box-shadow:var(--shadow);
+    isolation:isolate;
+  }
+  .cover::after{
+    content:"";
+    position:absolute;inset:12px;
+    border:1px solid rgba(27,24,19,.30);
+    pointer-events:none;
+  }
+  .sun{
+    position:absolute;
+    width:58%;aspect-ratio:1;
+    left:21%;top:16%;
+    border-radius:50%;
+    background:radial-gradient(circle at 38% 35%, #f7efcf 0 18%, #e4cf82 55%, #b96b35 100%);
+    box-shadow:0 0 0 1px rgba(27,24,19,.15), 0 0 70px rgba(247,239,207,.55);
+  }
+  .sun::before,.sun::after{
+    content:"";position:absolute;left:50%;top:50%;
+    width:1px;height:135%;background:rgba(27,24,19,.20);
+    transform-origin:center;
+  }
+  .sun::before{transform:translate(-50%,-50%) rotate(18deg)}
+  .sun::after{transform:translate(-50%,-50%) rotate(-31deg)}
+  .cover-type{
+    position:absolute;left:0;right:0;bottom:28%;
+    font-family:var(--serif);
+    font-weight:900;
+    font-size:clamp(4.6rem,21vw,8.4rem);
+    line-height:.72;
+    letter-spacing:-.08em;
+    color:var(--ink);
+    mix-blend-mode:multiply;
+  }
+  .cover-sub{
+    position:absolute;left:0;right:0;bottom:18%;
+    font-size:clamp(.62rem,2.4vw,.78rem);
+    letter-spacing:.42em;
+    font-weight:800;
+    text-transform:uppercase;
+  }
+  .cover-meta{
+    position:absolute;left:0;right:0;bottom:7.5%;
+    font-family:var(--mono);
+    font-size:.62rem;
+    letter-spacing:.12em;
+    color:rgba(27,24,19,.75);
+  }
+  h1{
+    font-family:var(--serif);
+    font-weight:800;
+    font-size:clamp(2.1rem,7vw,3.4rem);
+    line-height:1.06;
+    letter-spacing:-.035em;
+    margin:0 auto 14px;
+    max-width:11em;
+  }
+  .lede{
+    max-width:31em;margin:0 auto;
+    color:var(--muted);
+    line-height:1.8;
+    font-size:.98rem;
+  }
+  .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 24px}
+  .chip{
+    border:1px solid var(--line-strong);
+    border-radius:999px;
+    padding:6px 11px;
+    font-size:.72rem;
+    letter-spacing:.04em;
+    color:var(--ink);
+    background:rgba(251,246,233,.45);
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    min-height:44px;
+    padding:11px 18px;
+    border-radius:999px;
+    border:1px solid var(--line-strong);
+    background:transparent;
+    color:var(--ink);
+    text-decoration:none;
+    font-size:.86rem;
+    font-weight:650;
+    letter-spacing:.02em;
+    cursor:pointer;
+    transition:transform .16s ease, background .16s ease, color .16s ease;
+  }
+  .btn:hover{transform:translateY(-1px)}
+  .btn.primary{background:var(--ink);color:var(--paper-2);border-color:var(--ink)}
+  .btn.primary:hover{background:#332d24}
+  .btn.ghost:hover{background:rgba(251,246,233,.7)}
+  .btn.small{min-height:36px;padding:7px 12px;font-size:.74rem}
+
+  .timer{
+    position:sticky;top:0;z-index:30;
+    background:rgba(27,24,19,.96);
+    color:var(--paper-2);
+    border-top:1px solid rgba(251,246,233,.12);
+    border-bottom:1px solid rgba(251,246,233,.12);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+  }
+  .timer-inner{
+    width:min(760px,100%);margin:0 auto;
+    padding:12px 18px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:10px 14px;
+    align-items:center;
+  }
+  .timer-left{display:flex;align-items:baseline;gap:12px;min-width:0}
+  .timer-time{
+    font-family:var(--mono);
+    font-size:1.72rem;
+    line-height:1;
+    letter-spacing:-.04em;
+    font-variant-numeric:tabular-nums;
+    color:var(--acid);
+  }
+  .timer-label{font-size:.7rem;letter-spacing:.08em;color:rgba(251,246,233,.62);white-space:nowrap}
+  .timer-actions{display:flex;gap:8px;align-items:center}
+  .timer .btn{
+    min-height:38px;padding:8px 14px;
+    border-color:rgba(251,246,233,.32);
+    color:var(--paper-2);
+    background:transparent;
+  }
+  .timer .btn:hover{background:rgba(251,246,233,.10)}
+  .timer .btn.primary{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+  .timer .btn.primary:hover{background:#e8e28c}
+  .timer-status{
+    grid-column:1/-1;
+    font-size:.72rem;
+    line-height:1.45;
+    color:rgba(251,246,233,.62);
+    min-height:1.05em;
+  }
+  .timer-bar{
+    grid-column:1/-1;
+    height:2px;background:rgba(251,246,233,.16);
+    overflow:hidden;border-radius:2px;
+  }
+  .timer-bar span{display:block;height:100%;width:100%;background:var(--acid);transform-origin:left;transition:width .25s linear}
+
+  main{padding:30px 0 60px}
+  .how{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+    margin:0 0 30px;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:16px 0;
+  }
+  .how div{padding:0 8px;border-left:1px solid var(--line)}
+  .how div:first-child{border-left:0;padding-left:0}
+  .how b{display:block;font-family:var(--serif);font-size:1.3rem;line-height:1.1;margin-bottom:5px}
+  .how span{display:block;font-size:.7rem;line-height:1.55;color:var(--muted)}
+
+  .night{
+    position:relative;
+    scroll-margin-top:110px;
+    background:rgba(251,246,233,.82);
+    border:1px solid var(--line);
+    box-shadow:0 8px 30px rgba(54,41,24,.06);
+    padding:22px 20px 18px;
+    margin:0 0 18px;
+  }
+  .night::before{
+    content:attr(data-night-label);
+    position:absolute;top:-9px;left:18px;
+    background:var(--paper);
+    padding:0 7px;
+    font-family:var(--mono);
+    font-size:.58rem;
+    letter-spacing:.16em;
+    color:var(--muted);
+  }
+  .night-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:12px}
+  .kicker{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--accent-dark)}
+  .night h2{
+    font-family:var(--serif);
+    font-size:clamp(1.55rem,4.8vw,2.05rem);
+    letter-spacing:-.025em;
+    line-height:1.12;
+    margin:6px 0 0;
+  }
+  .pill{
+    flex:0 0 auto;
+    border:1px solid var(--line-strong);
+    border-radius:999px;
+    padding:5px 9px;
+    font-family:var(--mono);
+    font-size:.66rem;
+    color:var(--muted);
+    white-space:nowrap;
+  }
+  .night-desc{margin:0 0 14px;color:var(--muted);font-size:.86rem;line-height:1.7}
+  .tracks{border-top:1px solid var(--line)}
+  .track{
+    display:grid;
+    grid-template-columns:20px 26px minmax(0,1fr) auto 34px;
+    align-items:center;
+    gap:8px;
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+    transition:opacity .15s ease;
+  }
+  .track.done{opacity:.55}
+  .track.done .title{text-decoration:line-through;text-decoration-thickness:1px}
+  .track input{
+    width:17px;height:17px;margin:0;
+    accent-color:var(--accent);
+    cursor:pointer;
+  }
+  .num{
+    font-family:var(--mono);
+    font-size:.64rem;
+    color:var(--muted);
+    letter-spacing:.02em;
+  }
+  .title{font-size:.92rem;line-height:1.35;min-width:0}
+  .title small{display:block;color:var(--muted);font-size:.7rem;margin-top:2px}
+  .dur{font-family:var(--mono);font-size:.68rem;color:var(--muted);white-space:nowrap}
+  .listen{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:30px;height:30px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    text-decoration:none;
+    font-size:.62rem;
+    color:var(--muted);
+    transition:background .15s ease,color .15s ease;
+  }
+  .listen:hover{background:var(--ink);color:var(--paper-2)}
+  .track.replay .num{color:var(--accent-dark);font-weight:800}
+  .night-foot{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;margin-top:14px}
+  .progress{
+    font-family:var(--mono);font-size:.66rem;
+    color:var(--muted);
+    white-space:nowrap;
+    padding-top:9px;
+  }
+  .progress b{color:var(--ink);font-weight:700}
+  .note-label{display:block;font-size:.7rem;color:var(--muted);line-height:1.4}
+  textarea{
+    display:block;width:100%;
+    margin-top:6px;
+    padding:9px 10px;
+    border:1px solid var(--line);
+    border-radius:2px;
+    background:rgba(242,232,213,.45);
+    color:var(--ink);
+    font:inherit;
+    font-size:.82rem;
+    line-height:1.55;
+    resize:vertical;
+    min-height:58px;
+  }
+  textarea:focus,input:focus,select:focus,button:focus-visible,a:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+  }
+  .prompt{
+    margin-top:14px;
+    padding:10px 12px;
+    background:rgba(217,212,111,.20);
+    border-left:3px solid var(--acid);
+    font-size:.8rem;
+    line-height:1.65;
+  }
+  .prompt strong{display:block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px;color:var(--accent-dark)}
+
+  .background{
+    margin:28px 0 22px;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  details{padding:14px 0}
+  summary{
+    cursor:pointer;
+    font-family:var(--serif);
+    font-size:1.18rem;
+    font-weight:750;
+    letter-spacing:-.01em;
+    list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"＋";font-family:var(--sans);font-size:1rem;color:var(--accent);font-weight:400}
+  details[open] summary::after{content:"−"}
+  .bg-body{padding:14px 0 2px;color:var(--muted);font-size:.84rem;line-height:1.8}
+  .bg-body p{margin:0 0 10px}
+  .bg-body ul{margin:0;padding-left:1.15em}
+  .bg-body li{margin:0 0 7px}
+  .bg-body strong{color:var(--ink);font-weight:650}
+
+  .review{
+    scroll-margin-top:110px;
+    margin-top:34px;
+    background:var(--ink);
+    color:var(--paper-2);
+    padding:26px 20px 24px;
+    box-shadow:var(--shadow);
+  }
+  .review .kicker{color:var(--acid)}
+  .review h2{
+    font-family:var(--serif);
+    font-size:clamp(1.8rem,5.5vw,2.6rem);
+    line-height:1.1;
+    letter-spacing:-.03em;
+    margin:7px 0 10px;
+  }
+  .review p{color:rgba(251,246,233,.66);font-size:.84rem;line-height:1.7;margin:0 0 18px}
+  .stars{display:flex;gap:6px;margin:0 0 14px}
+  .star{
+    width:42px;height:42px;
+    border:1px solid rgba(251,246,233,.25);
+    background:transparent;
+    color:rgba(251,246,233,.55);
+    font-size:1.25rem;
+    line-height:1;
+    cursor:pointer;
+    border-radius:2px;
+    transition:background .15s ease,color .15s ease;
+  }
+  .star.on{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+  .star:hover{border-color:var(--acid)}
+  .field{margin:0 0 14px}
+  .field label{display:block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(251,246,233,.58);margin-bottom:6px}
+  .field select,.field textarea{
+    width:100%;
+    border:1px solid rgba(251,246,233,.22);
+    background:rgba(251,246,233,.06);
+    color:var(--paper-2);
+    border-radius:2px;
+    padding:10px;
+    font:inherit;
+    font-size:.84rem;
+    line-height:1.55;
+  }
+  .field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,rgba(251,246,233,.6) 50%),linear-gradient(135deg,rgba(251,246,233,.6) 50%,transparent 50%);background-position:calc(100% - 16px) 50%,calc(100% - 11px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+  .field textarea{min-height:58px;resize:vertical}
+  .field select option{color:var(--ink);background:var(--paper-2)}
+  .review-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
+  .review .btn{border-color:rgba(251,246,233,.32);color:var(--paper-2)}
+  .review .btn.primary{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+  .review .btn:hover{background:rgba(251,246,233,.10)}
+  .review .btn.primary:hover{background:#e8e28c}
+  .code-wrap{margin-top:14px;display:none}
+  .code-wrap.show{display:block}
+  .code-wrap p{font-size:.72rem;margin:0 0 6px}
+  #review-code{
+    width:100%;min-height:92px;
+    border:1px solid rgba(251,246,233,.22);
+    background:rgba(0,0,0,.18);
+    color:var(--acid);
+    padding:10px;
+    font-family:var(--mono);
+    font-size:.64rem;
+    line-height:1.5;
+    resize:vertical;
+    word-break:break-all;
+  }
+  .code-status{font-size:.7rem;color:var(--acid);min-height:1.2em;margin-top:6px}
+
+  footer{padding:30px 0 8px;color:var(--muted);font-size:.76rem;line-height:1.8}
+  footer h3{font-family:var(--serif);color:var(--ink);font-size:1.2rem;margin:0 0 8px}
+  footer ol{padding-left:1.2em;margin:8px 0 16px}
+  footer li{margin:0 0 7px}
+  .fine{border-top:1px solid var(--line);padding-top:14px;margin-top:18px;font-size:.7rem;color:rgba(116,105,90,.9)}
+  .print-only{display:none}
+
+  @media (max-width:520px){
+    .hero{padding-top:22px}
+    .hero-top{margin-bottom:18px}
+    .hero-top .stamp{font-size:.56rem;padding:6px 8px}
+    .lede{font-size:.92rem}
+    .chips{margin:16px 0 20px}
+    .how{grid-template-columns:1fr;gap:0;padding:0;margin-bottom:24px}
+    .how div{border-left:0;border-top:1px solid var(--line);padding:11px 0;display:flex;align-items:baseline;gap:10px}
+    .how div:first-child{border-top:0}
+    .how b{font-size:1.1rem;margin:0;flex:0 0 2.2em}
+    .how span{font-size:.72rem}
+    .night{padding:20px 15px 16px}
+    .track{grid-template-columns:18px 23px minmax(0,1fr) auto 30px;gap:7px}
+    .title{font-size:.88rem}
+    .listen{width:28px;height:28px;font-size:.58rem}
+    .night-foot{grid-template-columns:1fr;gap:8px}
+    .progress{padding-top:0}
+    .timer-inner{padding:10px 14px;gap:8px 10px}
+    .timer-time{font-size:1.48rem}
+    .timer-label{font-size:.62rem}
+    .timer .btn{min-height:34px;padding:6px 11px;font-size:.74rem}
+    .timer-status{font-size:.66rem}
+    .review{padding:22px 15px 20px}
+    .star{width:39px;height:39px}
+  }
+
+  @media print{
+    body{background:#fff;color:#000}
+    body::before{display:none}
+    .print-only{display:block!important}
+    .hero{padding:0 0 12px;text-align:left}
+    .hero-top,.hero-actions,.timer,.how,.listen,.review-actions,.code-wrap,.star,.stars,.field select,.fine{display:none!important}
+    .print-stars{font-size:.72rem;letter-spacing:.08em;margin:0 0 10px;color:#333}
+    .print-favorite{font-size:.78rem;margin:-4px 0 10px;color:#333}
+    .field label[for="favorite"]{display:none!important}
+    .wrap{width:100%;padding:0}
+    .cover{width:180px;margin:0 0 12px;box-shadow:none}
+    .cover-type{font-size:3.2rem}
+    .cover-sub{font-size:.42rem}
+    .cover-meta{font-size:.42rem}
+    h1{font-size:1.7rem;margin-left:0}
+    .lede{font-size:.78rem;margin-left:0}
+    .chips{justify-content:flex-start;margin:8px 0}
+    .chip{font-size:.58rem;padding:3px 7px}
+    main{padding:10px 0 0}
+    .night{background:#fff;border:1px solid #bbb;box-shadow:none;break-inside:avoid;page-break-inside:avoid;margin:0 0 10px;padding:12px}
+    .night::before{background:#fff;color:#555}
+    .night-head{margin-bottom:6px}
+    .night h2{font-size:1.3rem}
+    .night-desc{font-size:.72rem;margin-bottom:6px}
+    .track{padding:5px 0;grid-template-columns:16px 1fr auto;opacity:1!important}
+    .track input{display:none}
+    .track .title{font-size:.75rem;text-decoration:none!important}
+    .track .dur{font-size:.62rem}
+    .num{font-size:.58rem}
+    .prompt{background:#f3f3f3;border-left:2px solid #999;font-size:.68rem;padding:6px 8px;margin-top:6px}
+    .progress{font-size:.62rem;padding-top:0}
+    .night-foot{grid-template-columns:auto 1fr;gap:8px;margin-top:6px}
+    textarea{display:none}
+    .background{border-color:#bbb;margin:10px 0;break-inside:avoid}
+    details{padding:6px 0}
+    summary{font-size:.9rem}
+    .bg-body{font-size:.68rem;padding:4px 0}
+    .review{background:#fff;color:#000;box-shadow:none;padding:12px 0 0;border-top:2px solid #000;break-before:page}
+    .review h2{font-size:1.4rem}
+    .review p{color:#333;font-size:.72rem}
+    .review .field label{color:#333}
+    .review .field textarea{display:block;border:1px solid #bbb;background:#fff;color:#000;min-height:48px}
+    footer{page-break-before:auto}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="hero-top">
+    <div class="eyebrow">Rock Ritual · Week 46</div>
+    <div class="stamp">2026.11.09—11.15</div>
+  </div>
+
+  <div class="cover" aria-label="Love, Forever Changes, 1967">
+    <div class="sun"></div>
+    <div class="cover-type">LOVE</div>
+    <div class="cover-sub">Forever Changes</div>
+    <div class="cover-meta">1967 · ELEKTRA · 42:59</div>
+  </div>
+
+  <h1>三个夜晚，<br>一张专辑。</h1>
+  <p class="lede">
+    Love 的《Forever Changes》。1967 年的洛杉矶迷幻：弦乐很亮，歌词很暗。
+    不用一次听完，也不用听懂。每晚 20 分钟，带走一个画面就好。
+  </p>
+  <div class="chips">
+    <span class="chip">42:59</span>
+    <span class="chip">3 个听夜</span>
+    <span class="chip">每晚 20 分钟</span>
+    <span class="chip">耳机 / 关灯</span>
+  </div>
+  <div class="hero-actions">
+    <a class="btn primary" href="#night-1">开始第一晚</a>
+    <a class="btn ghost" href="https://music.163.com/#/search/m/?s=Love%20Forever%20Changes&type=1" target="_blank" rel="noopener">在网易云打开专辑</a>
+  </div>
+</header>
+
+<section class="timer" aria-label="20 分钟计时器">
+  <div class="timer-inner">
+    <div class="timer-left">
+      <div class="timer-time" id="timer-time">20:00</div>
+      <div class="timer-label">今晚的 20 分钟</div>
+    </div>
+    <div class="timer-actions">
+      <button class="btn primary" id="timer-toggle" type="button">开始</button>
+      <button class="btn" id="timer-reset" type="button">重置</button>
+    </div>
+    <div class="timer-status" id="timer-status" aria-live="polite">按开始，然后去听。到时间会响一声。</div>
+    <div class="timer-bar" aria-hidden="true"><span id="timer-fill"></span></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="how" aria-label="怎么用">
+    <div><b>2′</b><span>读一眼背景，不查资料。</span></div>
+    <div><b>18′</b><span>按顺序听，别切歌。</span></div>
+    <div><b>1′</b><span>写一句，然后睡。</span></div>
+  </div>
+
+  <section class="nights" aria-label="三个听夜">
+
+    <article class="night" id="night-1" data-night="n1" data-night-label="NIGHT 01 / 03">
+      <div class="night-head">
+        <div>
+          <div class="kicker">周一 11/09 · 00:00 · 开门</div>
+          <h2>先把门打开</h2>
+        </div>
+        <span class="pill">16:46</span>
+      </div>
+      <p class="night-desc">前五首。先不要看歌词，听弦乐和铜管什么时候进来；它们是在安慰你，还是在拆你的台？</p>
+
+      <div class="tracks">
+        <div class="track">
+          <input type="checkbox" data-track="n1t1" aria-label="标记 Alone Again Or 已听">
+          <span class="num">01</span>
+          <span class="title">Alone Again Or</span>
+          <span class="dur">3:18</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Alone%20Again%20Or&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Alone Again Or">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n1t2" aria-label="标记 A House Is Not a Motel 已听">
+          <span class="num">02</span>
+          <span class="title">A House Is Not a Motel</span>
+          <span class="dur">3:32</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20A%20House%20Is%20Not%20a%20Motel&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 A House Is Not a Motel">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n1t3" aria-label="标记 Andmoreagain 已听">
+          <span class="num">03</span>
+          <span class="title">Andmoreagain</span>
+          <span class="dur">3:22</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Andmoreagain&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Andmoreagain">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n1t4" aria-label="标记 The Daily Planet 已听">
+          <span class="num">04</span>
+          <span class="title">The Daily Planet</span>
+          <span class="dur">3:31</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20The%20Daily%20Planet&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 The Daily Planet">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n1t5" aria-label="标记 Old Man 已听">
+          <span class="num">05</span>
+          <span class="title">Old Man</span>
+          <span class="dur">3:03</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Old%20Man&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Old Man">听</a>
+        </div>
+      </div>
+
+      <div class="night-foot">
+        <div class="progress" data-progress="n1"><b>0/5</b> 已听</div>
+        <label class="note-label">今晚一句（不用完整）
+          <textarea data-note="n1" rows="2" placeholder="比如：弦乐像在笑，但歌词不像。"></textarea>
+        </label>
+      </div>
+      <div class="prompt"><strong>带着这个问题</strong>哪一首最像 Beatles？哪一首最不像？只记一个词。</div>
+    </article>
+
+    <article class="night" id="night-2" data-night="n2" data-night-label="NIGHT 02 / 03">
+      <div class="night-head">
+        <div>
+          <div class="kicker">周二 11/10 · 00:00 · 暗门</div>
+          <h2>The Red Telephone</h2>
+        </div>
+        <span class="pill">16:58</span>
+      </div>
+      <p class="night-desc">从专辑的暗门进去。今晚四首，其中一首 5 分半；不要急着判断它“太长”。</p>
+
+      <div class="tracks">
+        <div class="track">
+          <input type="checkbox" data-track="n2t6" aria-label="标记 The Red Telephone 已听">
+          <span class="num">06</span>
+          <span class="title">The Red Telephone</span>
+          <span class="dur">4:46</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20The%20Red%20Telephone&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 The Red Telephone">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n2t7" aria-label="标记 Maybe the People Would Be the Times 已听">
+          <span class="num">07</span>
+          <span class="title">Maybe the People Would Be the Times or Between Clark and Hilldale</span>
+          <span class="dur">3:35</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Maybe%20the%20People%20Would%20Be%20the%20Times&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Maybe the People Would Be the Times">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n2t8" aria-label="标记 Live and Let Live 已听">
+          <span class="num">08</span>
+          <span class="title">Live and Let Live</span>
+          <span class="dur">5:28</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Live%20and%20Let%20Live&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Live and Let Live">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n2t9" aria-label="标记 The Good Humor Man He Sees Everything Like This 已听">
+          <span class="num">09</span>
+          <span class="title">The Good Humor Man He Sees Everything Like This</span>
+          <span class="dur">3:09</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20The%20Good%20Humor%20Man&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 The Good Humor Man">听</a>
+        </div>
+      </div>
+
+      <div class="night-foot">
+        <div class="progress" data-progress="n2"><b>0/4</b> 已听</div>
+        <label class="note-label">今晚一句
+          <textarea data-note="n2" rows="2" placeholder="听到 “They're locking them up today” 时，你脑中的画面是……"></textarea>
+        </label>
+      </div>
+      <div class="prompt"><strong>带着这个问题</strong>Side B 的前三首，像不像从白天走到了夜里？</div>
+    </article>
+
+    <article class="night" id="night-3" data-night="n3" data-night-label="NIGHT 03 / 03">
+      <div class="night-head">
+        <div>
+          <div class="kicker">周三 11/11 · 00:00 · 收束</div>
+          <h2>You Set the Scene</h2>
+        </div>
+        <span class="pill">9:15 + 3:18</span>
+      </div>
+      <p class="night-desc">最后两首，然后回到开头重听一次。结束和开始放在同一个 20 分钟里。</p>
+
+      <div class="tracks">
+        <div class="track">
+          <input type="checkbox" data-track="n3t10" aria-label="标记 Bummer in the Summer 已听">
+          <span class="num">10</span>
+          <span class="title">Bummer in the Summer</span>
+          <span class="dur">2:25</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Bummer%20in%20the%20Summer&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Bummer in the Summer">听</a>
+        </div>
+        <div class="track">
+          <input type="checkbox" data-track="n3t11" aria-label="标记 You Set the Scene 已听">
+          <span class="num">11</span>
+          <span class="title">You Set the Scene</span>
+          <span class="dur">6:50</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20You%20Set%20the%20Scene&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 You Set the Scene">听</a>
+        </div>
+        <div class="track replay">
+          <input type="checkbox" data-track="n3r" aria-label="标记 Alone Again Or 重听完成">
+          <span class="num">↻</span>
+          <span class="title">Alone Again Or <small>重听</small></span>
+          <span class="dur">3:18</span>
+          <a class="listen" href="https://music.163.com/#/search/m/?s=Love%20Alone%20Again%20Or&type=1" target="_blank" rel="noopener" aria-label="在网易云搜索 Alone Again Or">听</a>
+        </div>
+      </div>
+
+      <div class="night-foot">
+        <div class="progress" data-progress="n3"><b>0/3</b> 已听</div>
+        <label class="note-label">今晚三行（这张专辑在讲什么 / 哪一刻走神 / 还会再听哪首）
+          <textarea data-note="n3" rows="3" placeholder="1. 这张专辑在讲……&#10;2. 我走神的一刻是……&#10;3. 我还会再听……"></textarea>
+        </label>
+      </div>
+      <div class="prompt"><strong>带着这个问题</strong>最后两分钟，弦乐是在收束，还是在爆炸？</div>
+    </article>
+
+  </section>
+
+  <section class="background" aria-label="专辑背景">
+    <details open>
+      <summary>2 分钟背景：这张专辑是怎么来的</summary>
+      <div class="bg-body">
+        <p><strong>Love</strong> 是 1965 年在洛杉矶成立的乐队，核心是 Arthur Lee；Bryan MacLean 写了开场的 <em>Alone Again Or</em>。</p>
+        <ul>
+          <li><em>Forever Changes</em> 于 1967 年 11 月由 Elektra 发行，是经典阵容的最后一张录音室专辑。</li>
+          <li>录于好莱坞 Sunset Sound Recorders；David Angel 做了弦乐/铜管编曲。所以它像一支摇滚乐队和一间小型管弦乐团在同一个房间里。</li>
+          <li>歌词谈乌托邦、种族、死亡、爱和偏执；Arthur Lee 很少直说，他用一幅幅怪诞的画面。</li>
+          <li>当时卖得不算好，后来被追认为 60 年代最重要的唱片之一。别带“这是经典”的压力听。</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="review" id="review" aria-label="本周回顾">
+    <div class="kicker">周四 11/12 · 00:00 · 3 分钟</div>
+    <h2>把这一周收起来。</h2>
+    <p>不用写乐评。给个星，选一首最爱的，留一个瞬间。下周的你会感谢现在的你。</p>
+
+    <div class="stars" role="group" aria-label="给这张专辑打分">
+      <button class="star" type="button" data-star="1" aria-label="1 星" aria-pressed="false">★</button>
+      <button class="star" type="button" data-star="2" aria-label="2 星" aria-pressed="false">★</button>
+      <button class="star" type="button" data-star="3" aria-label="3 星" aria-pressed="false">★</button>
+      <button class="star" type="button" data-star="4" aria-label="4 星" aria-pressed="false">★</button>
+      <button class="star" type="button" data-star="5" aria-label="5 星" aria-pressed="false">★</button>
+    </div>
+    <div class="print-only print-stars">评分：① ② ③ ④ ⑤（圈一个）</div>
+
+    <div class="field">
+      <label for="favorite">最爱的一首</label>
+      <select id="favorite">
+        <option value="">还没有 / 选不出</option>
+        <option>Alone Again Or</option>
+        <option>A House Is Not a Motel</option>
+        <option>Andmoreagain</option>
+        <option>The Daily Planet</option>
+        <option>Old Man</option>
+        <option>The Red Telephone</option>
+        <option>Maybe the People Would Be the Times</option>
+        <option>Live and Let Live</option>
+        <option>The Good Humor Man He Sees Everything Like This</option>
+        <option>Bummer in the Summer</option>
+        <option>You Set the Scene</option>
+      </select>
+    </div>
+    <div class="print-only print-favorite">最爱的一首：____________________________</div>
+
+    <div class="field">
+      <label for="r-what">这张专辑在讲什么？用三行。</label>
+      <textarea id="r-what" rows="3" placeholder="不用准确。写下你听到的那个版本。"></textarea>
+    </div>
+    <div class="field">
+      <label for="r-moment">哪一个瞬间让你想重听 / 走神？</label>
+      <textarea id="r-moment" rows="2" placeholder="一个乐器、一句词、一个转弯都可以。"></textarea>
+    </div>
+    <div class="field">
+      <label for="r-next">下周想更靠近什么？</label>
+      <textarea id="r-next" rows="2" placeholder="更安静 / 更实验 / 更流行 / 更重一点 / 说不好"></textarea>
+    </div>
+
+    <div class="review-actions">
+      <button class="btn primary" id="make-code" type="button">生成回顾码</button>
+      <button class="btn" id="copy-code" type="button">复制</button>
+    </div>
+    <div class="code-wrap" id="code-wrap">
+      <p>把这段发回 DSH，或存进备忘录。它包含你的勾选、笔记、星级和回顾。</p>
+      <textarea id="review-code" readonly rows="4" aria-label="本周回顾码"></textarea>
+      <div class="code-status" id="code-status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>这个网址怎么用</h3>
+    <ol>
+      <li>把这个网址收藏到手机书签（或加到主屏幕）；每周都是同一个网址，内容由 DSH 更新。</li>
+      <li>每晚点“开始”，20 分钟后会响一声；听完勾选、写一句。</li>
+      <li>周四回来给星、选最爱、生成回顾码，复制回 DSH。</li>
+      <li>下一张专辑只在你反馈后单独推荐，不提前排 12 张。</li>
+    </ol>
+    <p><strong>如果周三没听完：</strong>不补作业，顺延到下周前两晚；下一张专辑顺延一周。仪式比进度重要。</p>
+    <div class="fine">
+      曲目时长来自 MusicBrainz 的 *Forever Changes* 版本；网易云上以实际曲目为准。
+      笔记保存在你手机浏览器的 localStorage 里；换手机/清缓存会丢，重要内容请生成回顾码或抄到备忘录。
+    </div>
+  </footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var STORAGE_KEY = "rock-ritual:2026-W46";
+  var TOTAL = 20 * 60;
+
+  var defaultState = {
+    checked: {},
+    notes: { n1: "", n2: "", n3: "" },
+    stars: 0,
+    favorite: "",
+    review: { what: "", moment: "", next: "" },
+    updatedAt: null
+  };
+
+  function loadState() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return JSON.parse(JSON.stringify(defaultState));
+      var parsed = JSON.parse(raw);
+      return {
+        checked: Object.assign({}, defaultState.checked, parsed.checked || {}),
+        notes: Object.assign({}, defaultState.notes, parsed.notes || {}),
+        stars: Number(parsed.stars) || 0,
+        favorite: parsed.favorite || "",
+        review: Object.assign({}, defaultState.review, parsed.review || {}),
+        updatedAt: parsed.updatedAt || null
+      };
+    } catch (e) {
+      return JSON.parse(JSON.stringify(defaultState));
+    }
+  }
+
+  var state = loadState();
+
+  function saveState() {
+    state.updatedAt = new Date().toISOString();
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {
+      /* 本地文件模式下也可能被隐私设置拦住；不阻断页面 */
+    }
+  }
+
+  /* ---------- 勾选与笔记 ---------- */
+
+  function updateProgress(night) {
+    var article = document.getElementById("night-" + night.slice(1));
+    if (!article) return;
+    var boxes = article.querySelectorAll("input[data-track]");
+    var done = 0;
+    boxes.forEach(function (box) { if (box.checked) done += 1; });
+    var el = article.querySelector('[data-progress="' + night + '"]');
+    if (el) el.innerHTML = "<b>" + done + "/" + boxes.length + "</b> 已听";
+  }
+
+  document.querySelectorAll("input[data-track]").forEach(function (box) {
+    var key = box.getAttribute("data-track");
+    box.checked = !!state.checked[key];
+    box.closest(".track").classList.toggle("done", box.checked);
+    box.addEventListener("change", function () {
+      state.checked[key] = box.checked;
+      box.closest(".track").classList.toggle("done", box.checked);
+      updateProgress(box.closest(".night").getAttribute("data-night"));
+      saveState();
+    });
+  });
+
+  ["n1", "n2", "n3"].forEach(function (night) {
+    updateProgress(night);
+    var area = document.querySelector('[data-note="' + night + '"]');
+    if (!area) return;
+    area.value = state.notes[night] || "";
+    area.addEventListener("input", function () {
+      state.notes[night] = area.value;
+      saveState();
+    });
+  });
+
+  /* ---------- 星级 ---------- */
+
+  var starButtons = Array.prototype.slice.call(document.querySelectorAll(".star"));
+
+  function paintStars() {
+    starButtons.forEach(function (button) {
+      var value = Number(button.getAttribute("data-star"));
+      var on = value <= state.stars;
+      button.classList.toggle("on", on);
+      button.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  starButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var value = Number(button.getAttribute("data-star"));
+      state.stars = (state.stars === value) ? 0 : value;
+      paintStars();
+      saveState();
+    });
+  });
+  paintStars();
+
+  /* ---------- 回顾字段 ---------- */
+
+  var favorite = document.getElementById("favorite");
+  favorite.value = state.favorite || "";
+  favorite.addEventListener("change", function () {
+    state.favorite = favorite.value;
+    saveState();
+  });
+
+  [["r-what", "what"], ["r-moment", "moment"], ["r-next", "next"]].forEach(function (pair) {
+    var el = document.getElementById(pair[0]);
+    el.value = state.review[pair[1]] || "";
+    el.addEventListener("input", function () {
+      state.review[pair[1]] = el.value;
+      saveState();
+    });
+  });
+
+  /* ---------- 回顾码 ---------- */
+
+  function toBase64(text) {
+    var bytes = new TextEncoder().encode(text);
+    var binary = "";
+    for (var i = 0; i < bytes.length; i += 1) {
+      binary += String.fromCharCode(bytes[i]);
+    }
+    return btoa(binary);
+  }
+
+  var codeWrap = document.getElementById("code-wrap");
+  var codeEl = document.getElementById("review-code");
+  var codeStatus = document.getElementById("code-status");
+  var makeCode = document.getElementById("make-code");
+  var copyCode = document.getElementById("copy-code");
+
+  function buildCode() {
+    if (!state.stars) {
+      codeStatus.textContent = "先给个星，再生成回顾码。";
+      codeWrap.classList.add("show");
+      codeEl.value = "";
+      return "";
+    }
+    var payload = {
+      v: 1,
+      week: "2026-W46",
+      album: "Love — Forever Changes",
+      stars: state.stars,
+      favorite: state.favorite || null,
+      checked: state.checked,
+      notes: state.notes,
+      review: state.review,
+      updatedAt: new Date().toISOString()
+    };
+    var code = "RR1|2026-W46|" + toBase64(JSON.stringify(payload));
+    codeEl.value = code;
+    codeWrap.classList.add("show");
+    codeStatus.textContent = "已生成。复制后发回 DSH。";
+    return code;
+  }
+
+  makeCode.addEventListener("click", function () {
+    buildCode();
+  });
+
+  copyCode.addEventListener("click", function () {
+    var code = codeEl.value || buildCode();
+    if (!code) return;
+    function done() {
+      codeStatus.textContent = "已复制。去粘贴吧。";
+      copyCode.textContent = "已复制";
+      setTimeout(function () { copyCode.textContent = "复制"; }, 1600);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(done).catch(function () {
+        codeEl.focus();
+        codeEl.select();
+        try { document.execCommand("copy"); done(); }
+        catch (e) { codeStatus.textContent = "复制失败：请长按上面的文字手动复制。"; }
+      });
+    } else {
+      codeEl.focus();
+      codeEl.select();
+      try { document.execCommand("copy"); done(); }
+      catch (e) { codeStatus.textContent = "复制失败：请长按上面的文字手动复制。"; }
+    }
+  });
+
+  /* ---------- 20 分钟计时器 ---------- */
+
+  var timeEl = document.getElementById("timer-time");
+  var statusEl = document.getElementById("timer-status");
+  var fillEl = document.getElementById("timer-fill");
+  var toggleBtn = document.getElementById("timer-toggle");
+  var resetBtn = document.getElementById("timer-reset");
+
+  var remaining = TOTAL;
+  var running = false;
+  var endAt = 0;
+  var ticker = null;
+  var audioCtx = null;
+
+  function fmt(seconds) {
+    var m = Math.floor(seconds / 60);
+    var s = seconds % 60;
+    return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  function paintTimer() {
+    timeEl.textContent = fmt(remaining);
+    var ratio = Math.max(0, Math.min(1, remaining / TOTAL));
+    fillEl.style.width = (ratio * 100) + "%";
+  }
+
+  function beep() {
+    try {
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      var osc = audioCtx.createOscillator();
+      var gain = audioCtx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(528, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(396, audioCtx.currentTime + 0.45);
+      gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.18, audioCtx.currentTime + 0.03);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.5);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 1.55);
+    } catch (e) {
+      /* 没有音频权限也没关系，页面会给文字提示 */
+    }
+  }
+
+  function stopTicker() {
+    running = false;
+    if (ticker) {
+      clearInterval(ticker);
+      ticker = null;
+    }
+  }
+
+  function tick() {
+    remaining = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+    paintTimer();
+    if (remaining <= 0) {
+      stopTicker();
+      toggleBtn.textContent = "重新开始";
+      statusEl.textContent = "20 分钟到了。写一句，然后睡。";
+      beep();
+    }
+  }
+
+  function startTimer() {
+    if (running) return;
+    if (remaining <= 0) remaining = TOTAL;
+    running = true;
+    endAt = Date.now() + remaining * 1000;
+    ticker = setInterval(tick, 200);
+    toggleBtn.textContent = "暂停";
+    statusEl.textContent = "正在计时。把手机放下，去听。";
+    paintTimer();
+  }
+
+  function pauseTimer() {
+    if (!running) return;
+    remaining = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+    stopTicker();
+    toggleBtn.textContent = "继续";
+    statusEl.textContent = "已暂停。回来再按继续。";
+    paintTimer();
+  }
+
+  toggleBtn.addEventListener("click", function () {
+    if (running) pauseTimer();
+    else startTimer();
+  });
+
+  resetBtn.addEventListener("click", function () {
+    stopTicker();
+    remaining = TOTAL;
+    toggleBtn.textContent = "开始";
+    statusEl.textContent = "按开始，然后去听。到时间会响一声。";
+    paintTimer();
+  });
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible" && running) tick();
+  });
+
+  paintTimer();
+  paintStars();
+})();
+</script>
+</body>
+</html>
