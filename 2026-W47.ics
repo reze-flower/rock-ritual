@@ -1,0 +1,108 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rock Ritual//W47//CN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Rock Ritual · 2026-W47
+X-WR-TIMEZONE:Asia/Shanghai
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+X-LIC-LOCATION:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-W47-night1@rock-ritual.local
+DTSTAMP:20261114T152854Z
+DTSTART;TZID=Asia/Shanghai:20261116T000000
+DTEND;TZID=Asia/Shanghai:20261116T002000
+SUMMARY;LANGUAGE=zh-CN:Rock Ritual W47 · Night 1（周一 00:00）— Al
+ ison
+DESCRIPTION;LANGUAGE=zh-CN:Slowdive — Souvlaki / Night 1\n开始：周
+ 日 24:00（周一 00:00）\n听 Alison → Sing（16:29）。\n问题
+ ：这四首里，哪一首最像“飘起来”，哪一首最像“沉
+ 下去”？
+URL:https://reze-flower.github.io/rock-ritual/
+LOCATION:床边 / 耳机
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后：Rock Ritual W47 · Night 1（周一 00:00）
+ — Alison
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-W47-night2@rock-ritual.local
+DTSTAMP:20261114T152854Z
+DTSTART;TZID=Asia/Shanghai:20261117T000000
+DTEND;TZID=Asia/Shanghai:20261117T002000
+SUMMARY;LANGUAGE=zh-CN:Rock Ritual W47 · Night 2（周二 00:00）— So
+ uvlaki Space Station
+DESCRIPTION;LANGUAGE=zh-CN:Slowdive — Souvlaki / Night 2\n开始：周
+ 一 24:00（周二 00:00）\n听 Here She Comes → Altogether（16:50
+ ）。\n问题：像不像从水下慢慢浮到水面？
+URL:https://reze-flower.github.io/rock-ritual/
+LOCATION:床边 / 耳机
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后：Rock Ritual W47 · Night 2（周二 00:00）
+ — Souvlaki Space Station
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-W47-night3@rock-ritual.local
+DTSTAMP:20261114T152854Z
+DTSTART;TZID=Asia/Shanghai:20261118T000000
+DTEND;TZID=Asia/Shanghai:20261118T002000
+SUMMARY;LANGUAGE=zh-CN:Rock Ritual W47 · Night 3（周三 00:00）— Da
+ gger
+DESCRIPTION;LANGUAGE=zh-CN:Slowdive — Souvlaki / Night 3\n开始：周
+ 二 24:00（周三 00:00）\n重听 Souvlaki Space Station，再听 Melo
+ n Yellow / Dagger（13:32）。\n问题：Dagger 是把门关上，还
+ 是把窗打开？
+URL:https://reze-flower.github.io/rock-ritual/
+LOCATION:床边 / 耳机
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后：Rock Ritual W47 · Night 3（周三 00:00）
+ — Dagger
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-W47-review@rock-ritual.local
+DTSTAMP:20261114T152854Z
+DTSTART;TZID=Asia/Shanghai:20261119T000000
+DTEND;TZID=Asia/Shanghai:20261119T001500
+SUMMARY;LANGUAGE=zh-CN:Rock Ritual W47 · 回顾（周四 00:00）— 把
+ 这一周收起来
+DESCRIPTION;LANGUAGE=zh-CN:开始：周三 24:00（周四 00:00）\n3 分
+ 钟回顾：1–5 星、最爱的一首、一个瞬间、下周方向。
+ \n在周卡里生成回顾码，复制回 DSH。
+URL:https://reze-flower.github.io/rock-ritual/
+LOCATION:床边 / 耳机
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后：Rock Ritual W47 · 回顾（周四 00:00）—
+  把这一周收起来
+END:VALARM
+END:VEVENT
+END:VCALENDAR
